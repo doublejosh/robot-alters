@@ -1,218 +1,284 @@
 <!DOCTYPE html>
 <html lang="en">
-  <title>Altar de Robotique Re-Virginization Elémentaire | Space Virgins (2018)</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <link href="https://fonts.googleapis.com/css?family=Monoton|Syncopate" rel="stylesheet">
-  <link href="https://fastcdn.org/Glide.js/2.0.4/css/glide.core.min.css" rel="stylesheet">
-  <link href="https://fastcdn.org/Glide.js/2.0.4/css/glide.theme.min.css" rel="stylesheet">
-  <style>
-    body {
-      padding: 0;
-      margin: 0;
-      font-size: 16px;
-      font-family: 'Syncopate', sans-serif;
-      background: #040500 linear-gradient(87deg,
-        #040500 0%,#1e2745 23%,#212a44 29%,#212a44 37%,#222b47 43%,
-        #364056 52%,#364056 56%,#364056 59%,#6f664e 69%,#7b633e 74%,
-        #926d4b 78%,#4e3925 85%,#110d09 100%);
-    }
+<title>Altar de Robotique Re-Virginization Elémentaire | Space Virgins (2018)</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<link href="https://fonts.googleapis.com/css?family=Monoton|Syncopate" rel="stylesheet">
+<link href="https://fastcdn.org/Glide.js/2.0.4/css/glide.core.min.css" rel="stylesheet">
+<link href="https://fastcdn.org/Glide.js/2.0.4/css/glide.theme.min.css" rel="stylesheet">
+<style>
+  body {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    font-family: 'Syncopate', sans-serif;
+    background: #040500 linear-gradient(87deg,
+    #040500 0%, #1e2745 23%, #212a44 29%, #212a44 37%, #222b47 43%,
+    #364056 52%, #364056 56%, #364056 59%, #6f664e 69%, #7b633e 74%,
+    #926d4b 78%, #4e3925 85%, #110d09 100%);
+  }
 
-    .wrapper {
-      position: relative;
-      width: 100%;
-      height: 100%;
-      background: #040500;
-      background: linear-gradient(to bottom,
-        rgba(4, 5, 0, .5) 0%, rgba(30, 39, 69, .62) 23%, rgba(33, 42, 68, .9) 29%, rgba(33, 42, 68, 1) 37%,
-        rgba(34, 43, 71, 1) 43%, rgba(54, 64, 86, 1) 52%, rgba(54, 64, 86, 1) 56%, rgba(54, 64, 86, 1) 59%,
-        rgba(111, 102, 78, 1) 69%, #7b633e 74%, #926d4b 78%,#4e3925 85%,#110d09 100%);
-    }
+  .wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #040500;
+    background: linear-gradient(to bottom,
+    rgba(4, 5, 0, .5) 0%, rgba(30, 39, 69, .62) 23%, rgba(33, 42, 68, .9) 29%, rgba(33, 42, 68, 1) 37%,
+    rgba(34, 43, 71, 1) 43%, rgba(54, 64, 86, 1) 52%, rgba(54, 64, 86, 1) 56%, rgba(54, 64, 86, 1) 59%,
+    rgba(111, 102, 78, 1) 69%, #7b633e 74%, #926d4b 78%, #4e3925 85%, #110d09 100%);
+  }
 
+  .sky {
+    width: 100%;
+    padding: 50px 0 400px 0;
+    z-index: 1;
+    position: relative;
+    background-image: url('img/stars_large.png');
+    background-position: center;
+    text-align: center;
+  }
+
+  @media (min-width: 768px) {
     .sky {
-      width: 100%;
-      padding: 50px 0 400px 0;
-      background-image: url('img/stars_large.png');
+      padding-bottom: 800px;
+    }
+  }
+
+  h1,
+  .header-1,
+  h2,
+  .header-2,
+  h3,
+  .header-3 {
+    color: #fff;
+    margin-bottom: 0;
+    font-weight: normal;
+  }
+
+  h1,
+  .header-1 {
+    font-size: 4em;
+    line-height: 1em;
+  }
+
+  @media (min-width: 768px) {
+    h1,
+    .header-1 {
+      font-size: 6em;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    h1,
+    .header-1 {
+      font-size: 8em;
+    }
+  }
+
+  h2,
+  .header-2 {
+    font-size: 1.75em;
+    line-height: 1.2em;
+  }
+
+  @media (min-width: 768px) {
+    h2,
+    .header-2 {
+      font-size: 2.25em;
+    }
+  }
+
+  h3,
+  .header-3 {
+    font-size: 2em;
+    line-height: 1.4em;
+  }
+
+  a,
+  button.glide__arrow {
+    text-decoration: none;
+    color: #FFFFFF;
+  }
+
+  a:hover,
+  button.glide__arrow:hover {
+    color: #BA5BB3;
+  }
+
+  .deep-blend {
+    opacity: .1;
+  }
+
+  .medium-blend {
+    opacity: .5;
+  }
+
+  .night-headline,
+  .night-subhead {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .night-headline {
+    color: #000000;
+    text-shadow: -1px -1px 0 #364056;
+    font-family: 'Monoton', cursive;
+    /*background-image: url('img/Space-Virgins.svg');
       background-position: center;
-      text-align: center;
-    }
-    @media (min-width: 768px) {
-      .sky {
-        padding-bottom: 800px;
-      }
-    }
-
-    h1, .header-1, h2, .header-2, h3, .header-3 {
-      color: #fff;
-      margin-bottom: 0;
-      font-weight: normal;
-    }
-    h1, .header-1 {
-      font-size: 4em;
-      line-height: 1em;
-    }
-    @media (min-width: 768px) {
-      h1, .header-1 {
-        font-size: 6em;
-      }
-    }
-    @media (min-width: 1200px) {
-      h1, .header-1 {
-        font-size: 8em;
-      }
-    }
-    h2, .header-2 {
-      font-size: 1.75em;
-      line-height: 1.2em;
-    }
-    @media (min-width: 768px) {
-      h2, .header-2 {
-        font-size: 2.25em;
-      }
-    }
-    h3, .header-3 {
-      font-size: 2em;
-      line-height: 1.4em;
-    }
-
-    a, button.glide__arrow {
-      text-decoration: none;
-      color: #BA5BB3;
-    }
-    a:hover, button.glide__arrow:hover {
-      color:#76B550;
-    }
-
-    .deep-blend {
-      opacity: .1;
-    }
-    .medium-blend {
-      opacity: .5;
-    }
-    .night-headline,
-    .night-subhead {
-      margin-left: 30px;
-      margin-right: 30px;
-    }
-    .night-headline {
-      color: #000000;
-      text-shadow: -1px -1px 0 #364056;
-      font-family: 'Monoton', cursive;
-    }
-    .night-subhead {
-      color: #DFF5FF;
-      text-shadow: 2px 2px 3px #000;
-    }
-    .robot {
-      position: relative;
-      top: -200px;
-      margin-bottom: -100px;
-      padding: 0;
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-position: bottom;
-      text-align: center;
-    }
-    @media (min-width: 768px) {
-      .robot {
-        top: -450px;
-        margin-bottom: -260px;
-      }
-    }
-
-    .robot img, .robot object {
-      width: 100%;
-      margin-left: -2%;
-    }
-    @media (min-width: 1200px) {
-      .robot img, .robot object {
-        margin-left: -6%;
-      }
-    }
-
-    .footer {
-      position: absolute;
-      width: 100%;
-      bottom: 0;
-      left: 0;
-      text-align: center;
-      padding: 360px 0 30px 0;
-      color: #926d4b;
-    }
-    .dust {
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-image: url('img/sand-background.png');
       background-size: cover;
-      background-position: top;
-      opacity: .25;
+      text-indent: -9999px;
+      padding: 5px;*/
+  }
+
+  .night-subhead {
+    color: #DFF5FF;
+    text-shadow: 2px 2px 3px #000;
+  }
+
+  .robot {
+    position: relative;
+    top: -200px;
+    z-index: 10;
+    margin-bottom: -100px;
+    padding: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    text-align: center;
+  }
+
+  @media (min-width: 768px) {
+    .robot {
+      top: -450px;
+      margin-bottom: -260px;
     }
-    .footer a {
-      position: relative;
+  }
+
+  .robot img,
+  .robot object {
+    width: 100%;
+    margin-left: -2%;
+  }
+
+  @media (min-width: 1200px) {
+    .robot img,
+    .robot object {
+      margin-left: -6%;
     }
-    .glide--horizontal .glide__arrows.first-set {
-      top: 25%;
-    }
-    .glide--horizontal .glide__arrows.second-set {
-      top: 75%;
-    }
-    .glide--horizontal .glide__arrows.second-set button {
-      color: #ffffff;
-    }
-    .glide__track {
-      padding: 0;
-    }
+  }
+
+  .footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    padding: 360px 0 30px 0;
+    color: #926d4b;
+  }
+
+  .dust {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('img/sand-background.png');
+    background-size: cover;
+    background-position: top;
+    opacity: .15;
+  }
+
+  .footer a {
+    position: relative;
+  }
+
+  .glide--horizontal .glide__arrows.first-set {
+    top: 25%;
+  }
+
+  .glide--horizontal .glide__arrows.second-set {
+    top: 75%;
+  }
+
+  .glide--horizontal .glide__arrows.second-set button {
+    color: #ffffff;
+  }
+
+  .glide__track {
+    padding: 0;
+  }
+
+  .glide__arrow {
+    padding: 0;
+    border: 0;
+    font-size: 2em;
+  }
+
+  @media (min-width: 1024px) {
     .glide__arrow {
-      padding: 0;
-      border: 0;
       font-size: 2em;
     }
-    @media (min-width: 1024px) {
-      .glide__arrow {
-        font-size: 2em;
-      }
-    }
-  </style>
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(45, 45, 45, 0.3) url(https://www.packard.org/wp-content/themes/packard2017/img/overlay.svg);
+    background-size: 2px;
+  }
+</style>
 </head>
+
 <body>
   <div class="wrapper">
-     <div class="sky">
-       <h2 class="header-1 night-headline medium-blend">Space Virgins</h1>
-       <h1 class="header-2 night-subhead">Altar de Robotique<br> Re-Virginization Elémentaire</h2>
-     </div>
+    <div class="overlay"></div>
+    <div class="sky">
+      <h2 class="header-1 night-headline medium-blend">SPACE VIRGINS</h1>
+      <!-- <object id="space-virgins" type="image/svg+xml" data="img/Space-Virgins.svg"></object> -->
+      <h1 class="header-2 night-subhead">Altar de Robotique<br> Re-Virginization Elémentaire</h2>
+    </div>
 
-     <div class="glide-slider robot">
-       <div class="glide__arrows first-set">
-         <button class="glide__arrow prev" data-glide-dir="<">&#x21E6;</button>
-         <button class="glide__arrow next" data-glide-dir=">">&#x21E8;</button>
-       </div>
-       <div class="glide__arrows second-set">
-         <button class="glide__arrow prev" data-glide-dir="<">&#x21E6;</button>
-         <button class="glide__arrow next" data-glide-dir=">">&#x21E8;</button>
-       </div>
-       <div class="glide__wrapper">
-         <ul class="glide__track">
-           <li class="glide__slide">
-             <object id="first-svg-robot" type="image/svg+xml" data="img/SV-elemental-alters_air.svg"></object>
-             <!-- <img src="img/SV-elemental-alters_air.svg"> -->
-           </li>
-           <li class="glide__slide"><img src="img/SV-elemental-alters_fire.svg"></li>
-           <li class="glide__slide"><img src="img/SV-elemental-alters_water.svg"></li>
-           <li class="glide__slide"><img src="img/SV-elemental-alters_earth.svg"></li>
-         </ul>
-       </div>
-       <div class="glide__bullets"></div>
-     </div>
+    <div class="glide-slider robot">
+      <div class="glide__arrows first-set">
+        <button class="glide__arrow prev" data-glide-dir="<">&#x21E6;</button>
+        <button class="glide__arrow next" data-glide-dir=">">&#x21E8;</button>
+      </div>
+      <div class="glide__arrows second-set">
+        <button class="glide__arrow prev" data-glide-dir="<">&#x21E6;</button>
+        <button class="glide__arrow next" data-glide-dir=">">&#x21E8;</button>
+      </div>
+      <div class="glide__wrapper">
+        <ul class="glide__track">
+          <li class="glide__slide">
+            <object id="first-svg-robot" type="image/svg+xml" data="img/SV-elemental-alters_air.svg"></object>
+            <!-- <img src="img/SV-elemental-alters_air.svg"> -->
+          </li>
+          <li class="glide__slide">
+            <img src="img/SV-elemental-alters_fire.svg">
+          </li>
+          <li class="glide__slide">
+            <img src="img/SV-elemental-alters_water.svg">
+          </li>
+          <li class="glide__slide">
+            <img src="img/SV-elemental-alters_earth.svg">
+          </li>
+        </ul>
+      </div>
+      <div class="glide__bullets"></div>
+    </div>
 
-     <div class="footer">
-       <div class="dust"></div>
-       <a href="http://www.spacevirgin.org">Space Virgins</a>
-     </div>
+    <div class="footer">
+      <div class="dust"></div>
+      <a href="http://www.spacevirgin.org">Space Virgins</a>
+    </div>
   </div>
   <!-- Carousel slider -->
   <script src="https://code.jquery.com/jquery-latest.min.js"></script>
@@ -227,12 +293,23 @@
   </script>
   <script src="https://cdn.jsdelivr.net/npm/vivus@latest/dist/vivus.min.js"></script>
   <script>
-    new Vivus('first-svg-robot', {
-      duration: 800,
+    var firstBot = new Vivus('first-svg-robot', {
+      duration: 650,
       type: 'sync',
-      start: 'autostart',
+      start: 'manual',
       pathTimingFunction: Vivus.EASE_OUT
     });
   </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/shortcuts/inview.min.js"></script>
+  <script>
+    new Waypoint.Inview({
+      element: $('.glide__arrows.first-set')[0],
+      enter: function (direction) {
+        firstBot.play();
+      }
+    });
+  </script>
 </body>
+
 </html>
