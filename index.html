@@ -120,13 +120,13 @@
       }
     }
 
-    .robot img {
+    .robot img, .robot object {
       width: 100%;
       margin-left: -2%;
     }
     @media (min-width: 1200px) {
-      .robot img {
-        margin-left: -5%;
+      .robot img, .robot object {
+        margin-left: -6%;
       }
     }
 
@@ -197,7 +197,10 @@
        </div>
        <div class="glide__wrapper">
          <ul class="glide__track">
-           <li class="glide__slide"><img src="img/SV-elemental-alters_air.svg"></li>
+           <li class="glide__slide">
+             <object id="first-svg-robot" type="image/svg+xml" data="img/SV-elemental-alters_air.svg"></object>
+             <!-- <img src="img/SV-elemental-alters_air.svg"> -->
+           </li>
            <li class="glide__slide"><img src="img/SV-elemental-alters_fire.svg"></li>
            <li class="glide__slide"><img src="img/SV-elemental-alters_water.svg"></li>
            <li class="glide__slide"><img src="img/SV-elemental-alters_earth.svg"></li>
@@ -220,6 +223,15 @@
       autoplay: false,
       animationDuration: 800,
       paddings: 0
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/vivus@latest/dist/vivus.min.js"></script>
+  <script>
+    new Vivus('first-svg-robot', {
+      duration: 800,
+      type: 'sync',
+      start: 'autostart',
+      pathTimingFunction: Vivus.EASE_OUT
     });
   </script>
 </body>
