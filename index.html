@@ -106,7 +106,8 @@
     .robot {
       position: relative;
       top: -200px;
-      padding: 0 0 20px 0;
+      margin-bottom: -100px;
+      padding: 0;
       background-size: contain;
       background-repeat: no-repeat;
       background-position: bottom;
@@ -114,12 +115,19 @@
     }
     @media (min-width: 768px) {
       .robot {
-        top: -400px;
+        top: -450px;
+        margin-bottom: -260px;
       }
     }
 
     .robot img {
-      min-width: 80%;
+      width: 100%;
+      margin-left: -2%;
+    }
+    @media (min-width: 1200px) {
+      .robot img {
+        margin-left: -5%;
+      }
     }
 
     .footer {
@@ -128,7 +136,7 @@
       bottom: 0;
       left: 0;
       text-align: center;
-      padding: 200px 0 30px 0;
+      padding: 360px 0 30px 0;
       color: #926d4b;
     }
     .dust {
@@ -153,10 +161,16 @@
     .glide--horizontal .glide__arrows.second-set {
       top: 75%;
     }
+    .glide--horizontal .glide__arrows.second-set button {
+      color: #ffffff;
+    }
+    .glide__track {
+      padding: 0;
+    }
     .glide__arrow {
       padding: 0;
       border: 0;
-      font-size: 1em;
+      font-size: 2em;
     }
     @media (min-width: 1024px) {
       .glide__arrow {
@@ -183,9 +197,10 @@
        </div>
        <div class="glide__wrapper">
          <ul class="glide__track">
-           <li class="glide__slide"><img src="img/robot-1.png"></li>
-           <li class="glide__slide"><img src="img/robot-1.png"></li>
-           <li class="glide__slide"><img src="img/robot-1.png"></li>
+           <li class="glide__slide"><img src="img/SV-elemental-alters_air.svg"></li>
+           <li class="glide__slide"><img src="img/SV-elemental-alters_fire.svg"></li>
+           <li class="glide__slide"><img src="img/SV-elemental-alters_water.svg"></li>
+           <li class="glide__slide"><img src="img/SV-elemental-alters_earth.svg"></li>
          </ul>
        </div>
        <div class="glide__bullets"></div>
@@ -203,7 +218,8 @@
     $(".glide-slider").glide({
       type: "carousel",
       autoplay: false,
-      animationDuration: 800
+      animationDuration: 800,
+      paddings: 0
     });
   </script>
 </body>
